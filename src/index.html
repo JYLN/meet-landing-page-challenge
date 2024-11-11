@@ -17,51 +17,146 @@
     <!-- Stylesheets/Other Resources -->
     <link rel="stylesheet" href="./styles.css" type="text/css" />
   </head>
-  <body>
-    <header>
+  <body class="min-h-screen bg-white font-redhat text-base/normal">
+    <header class="mb-16 mt-12 flex justify-center">
       <img src="./assets/logo.svg" alt="Meet logo" />
     </header>
     <main>
       <!-- Hero -->
-      <section>
-        <!-- TODO: Hero Desktop and Mobile with Images -->
-        <h1>Group Chat for Everyone</h1>
-        <p>
-          Meet makes it easy to connect with others face-to-face virtually and
-          collaborate across any device.
-        </p>
-        <div>
-          <a href="#">Download v1.3</a>
-          <a href="#">What is it?</a>
+      <section
+        class="flex flex-col items-center justify-center overflow-hidden pb-8 xl:flex-row xl:justify-around xl:pb-16"
+      >
+        <img
+          class="mb-12 max-w-[115%] xl:hidden"
+          src="./assets/tablet/image-hero.png"
+          alt=""
+        />
+        <img
+          class="hidden xl:relative xl:-left-12 xl:block"
+          src="./assets/desktop/image-hero-left.png"
+          alt=""
+        />
+        <div
+          class="max-w-md space-y-6 px-8 text-center xl:max-w-lg xl:space-y-8 xl:p-0"
+        >
+          <h1
+            class="text-balance text-[2.5rem]/[1.1] font-black text-slate-900 md:text-5xl/[1.1] xl:text-[4rem]/[1.1]"
+          >
+            Group Chat for Everyone
+          </h1>
+          <p class="font-medium text-slate-600 xl:text-xl/normal">
+            Meet makes it easy to connect with others face-to-face virtually and
+            collaborate across any device.
+          </p>
+          <div class="flex flex-wrap justify-center gap-4">
+            <a
+              class="maw-w-max rounded-full bg-cyan-600 px-10 py-4 font-black text-white transition hover:bg-cyan-hover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-600"
+              href="#"
+            >
+              Download <span class="text-cyan-300">v1.3</span>
+            </a>
+            <a
+              class="max-w-max rounded-full bg-purple-600 px-10 py-4 font-black text-white transition hover:bg-purple-hover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-600"
+              href="#"
+            >
+              What is it?
+            </a>
+          </div>
         </div>
+        <img
+          class="hidden xl:relative xl:-right-12 xl:block xl:pt-28"
+          src="./assets/desktop/image-hero-right.png"
+          alt=""
+        />
       </section>
       <!-- Divider -->
-      <div>
-        <span>01</span>
+      <div class="mb-16 mt-8 flex flex-col items-center xl:mt-14">
+        <div class="h-20 w-0.5 bg-slate-300"></div>
+        <span
+          class="flex size-14 items-center justify-center rounded-full border border-slate-300 font-black text-slate-600"
+        >
+          01
+        </span>
       </div>
       <!-- Section 1 -->
-      <section>
-        <!-- TODO: Image Gallery -->
-        <p>Built for modern use</p>
-        <h2>Smarter meetings, all in one place</h2>
-        <p>
-          Send messages, share files, show your screen, and record your meetings
-          — all in one workspace. Control who can join with invite-only team
-          access, data encryption, and data export.
-        </p>
+      <section class="mx-auto mb-16 max-w-screen-xl xl:mb-[4.5rem]">
+        <div
+          class="mb-16 grid grid-cols-2 place-items-center gap-4 px-8 md:grid-cols-4 md:gap-6 xl:px-20"
+        >
+          <img
+            class="rounded-lg"
+            src="./assets/desktop/image-woman-in-videocall.jpg"
+            alt="Woman in videocall"
+          />
+          <img
+            class="rounded-lg"
+            src="./assets/desktop/image-women-videochatting.jpg"
+            alt="Women videochatting"
+          />
+          <img
+            class="rounded-lg"
+            src="./assets/desktop/image-men-in-meeting.jpg"
+            alt="Men in meeting"
+          />
+          <img
+            class="rounded-lg"
+            src="./assets/desktop/image-man-texting.jpg"
+            alt="Man texting"
+          />
+        </div>
+        <div class="mx-auto max-w-lg px-8 text-center xl:max-w-2xl">
+          <p
+            class="mb-4 text-xs font-black uppercase tracking-[0.25rem] text-cyan-600 md:text-sm xl:text-base"
+          >
+            Built for modern use
+          </p>
+          <h2
+            class="mb-8 text-[2rem]/[1.1] font-black text-slate-900 md:text-4xl/[1.1] xl:text-[2.5rem]/[1.1]"
+          >
+            Smarter meetings, all in one place
+          </h2>
+          <p class="font-medium text-slate-600 xl:text-xl/normal">
+            Send messages, share files, show your screen, and record your
+            meetings — all in one workspace. Control who can join with
+            invite-only team access, data encryption, and data export.
+          </p>
+        </div>
       </section>
     </main>
+    <!-- Divider -->
+    <div class="relative top-[1.8rem] flex flex-col items-center">
+      <div class="h-20 w-0.5 bg-slate-300"></div>
+      <span
+        class="flex size-14 items-center justify-center rounded-full border border-slate-300 bg-white font-black text-slate-600"
+      >
+        02
+      </span>
+    </div>
     <!-- Footer -->
-    <footer>
-      <div>
-        <span>02</span>
-      </div>
-      <h2>Experience more together</h2>
-      <p>
+    <footer
+      class="flex flex-col items-center justify-center gap-6 bg-footer-mobile bg-cover bg-top bg-no-repeat px-8 py-16 text-center md:bg-footer-tablet xl:flex-row xl:gap-12 xl:bg-footer-desktop xl:bg-center xl:py-28 xl:text-left"
+    >
+      <h2
+        class="text-[2rem]/[1.1] font-black text-white md:text-4xl/[1.1] xl:max-w-xs xl:text-[2.5rem]/[1.1]"
+      >
+        Experience more together
+      </h2>
+      <p class="max-w-lg font-medium text-white xl:max-w-sm xl:text-lg/normal">
         Stay connected with reliable HD meetings and unlimited one-on-one and
         group video sessions.
       </p>
-      <a href="#">Download v1.3</a>
+      <a
+        class="max-w-max rounded-full bg-purple-600 px-10 py-4 font-black text-white transition hover:bg-purple-hover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-600"
+        href="#"
+      >
+        Download <span class="text-purple-300">v1.3</span>
+      </a>
     </footer>
   </body>
 </html>
+
+<script>
+  if (module.hot) {
+    module.hot.accept();
+  }
+</script>
